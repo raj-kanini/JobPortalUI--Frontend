@@ -1,0 +1,42 @@
+<br><br><br><br><br>
+<!-- Applied Jobs Component -->
+
+<!-- Jobs Header -->
+<div class="container">
+    <div class="text-center mb-5">
+      <h3>Applied Jobs</h3>
+      <p class="lead">Your Premier Destination for Securing Your Dream Tech Job.</p>
+    </div>
+
+    <!-- Jobs List -->
+    <div class="card mb-3" *ngFor="let j of jobs">
+      <div class="card-body">
+        <div class="d-flex flex-column flex-lg-row">
+          <span class="avatar avatar-text rounded-3 me-4 mb-2">{{shortName(j.jobTitle)}}</span>
+          <div class="row flex-fill">
+            <div class="col-sm-5">
+              <h4 class="h5">{{j.jobTitle}}</h4>
+              <span class="badge bg-secondary">{{j.location}}</span>&nbsp;<span class="badge bg-success">{{j.ctc}}</span>
+            </div>
+            <div class="col-sm-4 py-2">
+              <!-- <span class="badge bg-secondary">ANGULAR</span>&nbsp;
+              <span class="badge bg-secondary">NODE</span>&nbsp;
+              <span class="badge bg-secondary">TYPESCRIPT</span>&nbsp;
+              <span class="badge bg-secondary">ENTRY-LEVEL</span> -->
+              <span class="badge bg-secondary">{{j.shortDescription}}</span>
+            </div>
+            <!-- Application Form -->
+            <!-- <div class="col-sm-3 text-lg-end">
+              <a [routerLink]="['/description/{{j.id}}']"  class="btn btn-primary stretched-link">Apply</a>
+            </div> -->
+            <div class="col-sm-3 text-lg-end">
+              <a href="description/{{j.id}}"  class="btn btn-danger stretched-link">Cancel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <app-footer></app-footer>

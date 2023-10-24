@@ -1,0 +1,41 @@
+<br><br><br>    
+<div class="container">
+    <div class="apply_box">
+        <!-- Job Title -->
+        <h1>{{job.jobTitle}}</h1>
+        <!-- Location -->
+        <h4>{{job.location}}</h4>
+        <!-- Salary Range -->
+        <h5>{{job.ctc}}</h5>
+
+        <br>
+
+        <!-- Horizontal Line Separator -->
+        <hr>
+
+        <br><br>
+
+        <div class="job-description">
+            <!-- Job Description Title -->
+            <h2>Job Description</h2>
+            <br>
+            
+            <!-- Job Description Content -->
+            <p>{{job.description}}</p>
+                
+        </div>
+
+        <div class="button_container">
+            <!-- Apply Button -->
+            <button (click)="apply()">Apply</button>
+        </div>
+
+        <div class="small">
+            <!-- Job Post Attribution -->
+            by
+            <a href="#" class="text-dark text-decoration-none" target="_blank">BeekinJobs</a>
+        </div>
+    </div>
+</div>
+<br><br>
+<app-footer></app-footer>

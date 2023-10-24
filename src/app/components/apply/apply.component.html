@@ -1,0 +1,80 @@
+<br><br><br><br>
+<br><br>
+<div class="container">
+    <div class="text-center mb-5">
+        <h3>Application Form</h3>
+        <p class="lead">To get ahead in the hiring process, please complete this form. It will help you take one step closer to your goal.</p>
+      </div>
+    <div class="row mx-0 justify-content-center">
+        <div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0 px-xxl-3">
+            <form (submit)="submitForm()" id="jobApplicationForm" class="w-100 rounded-1 p-4 border border-2 bg-white">
+                <label class="d-block mb-4">
+                    <span class="form-label d-block">Your name</span>
+                    <input  required name="name" type="text" class="form-control" placeholder="Enter Your Name"  [(ngModel)]="candidateDetail.name"/>
+                </label>
+
+                <label class="d-block mb-4">
+                    <span class="form-label d-block">Email address</span>
+                    <input [(ngModel)]="candidateDetail.emailAddress" required name="email" type="email" class="form-control"
+                        placeholder="Enter Email Address" />
+                </label>
+
+                <label class="d-block mb-4">
+                    <span class="form-label d-block">Years of experience</span>
+                    <select [(ngModel)]="candidateDetail.experience" required name="experience" class="form-select">
+                        <option>Less than a year</option>
+                        <option>1 - 2 years</option>
+                        <option>2 - 4 years</option>
+                        <option>4 - 7 years</option>
+                        <option>7 - 10 years</option>
+                        <option>10+ years</option>
+                    </select>
+                </label>
+
+                <label class="d-block mb-4">
+                    <span class="form-label d-block">Tell us more about yourself</span>
+                    <textarea [(ngModel)]="candidateDetail.about" name="message" class="form-control" rows="3" placeholder="What motivates you?"></textarea>
+                </label>
+
+                <label class="d-block mb-4">
+                    <span class="form-label d-block">Resume Upload</span>
+                    <input [(ngModel)]="candidateDetail.pdf" required name="cv" type="file" class="form-control" />
+                </label>
+
+                <div class="mb-4">
+                    <div>
+                        <div class="form-check">
+                            <label class="d-block">
+                                <input  [(ngModel)]="candidateDetail.location" type="radio" class="form-check-input" name="remote" value="yes" checked />
+                                <span class="form-check-label">You'd like to work remotely</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="form-check">
+                            <input [(ngModel)]="candidateDetail.location" type="radio" class="form-check-input" name="remote" value="no" />
+                            <span class="form-check-label">You'd prefer to work onsite</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary px-3 rounded-3">
+                        Apply
+                    </button>
+                </div>
+
+                <div class="d-block text-end">
+                    <div class="small">
+                        by
+                        <a href="#" class="text-dark text-decoration-none"
+                            target="_blank">BeekinJobs</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<br>
+<app-footer></app-footer>

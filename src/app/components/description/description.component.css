@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: whitesmoke;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .apply_box {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* box-shadow: 5px 4px 6px rgba(5, 5, 5, 0.1); */
+    border-radius: 10px;
+    box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.75);
+  }
+  
+  .button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  button {
+    background-color: black;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    /* transition: 0.3s ease-in; */
+  }
+  button:hover {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    color: black;
+    font-weight: 500;
+    /* transition: 0.3s ease-out; */
+    cursor: pointer;
+  }
+ 
+  
+  @media (max-width: 460px) {
+    .textarea_control {
+      grid-column: 1 / span 1;
+    }
+  } ;
