@@ -3,37 +3,37 @@
 
 <!-- Jobs Header -->
 <div class="container">
-    <div class="text-center mb-5">
-      <h3>Job Openings</h3>
-      <p class="lead">Your Premier Destination for Securing Your Dream Tech Job.</p>
-    </div>
+  <div class="text-center mb-5">
+    <h3>Job Openings</h3>
+    <p class="lead">Your Premier Destination for Securing Your Dream Tech Job.</p>
+  </div>
 
-    <!-- Jobs List -->
-    <div class="card mb-3" *ngFor="let j of jobs">
-      <div class="card-body">
-        <div class="d-flex flex-column flex-lg-row">
-           <!-- Job Avatar -->
-          <span class="avatar avatar-text rounded-3 me-4 mb-2">{{shortName(j.jobTitle)}}</span>
-          <div class="row flex-fill">
-            <div class="col-sm-5">
-               <!-- Job Title -->
-              <h4 class="h5">{{j.jobTitle}}</h4>
-                 <!-- Location and CTC Badges -->
-              <span class="badge bg-secondary">{{j.location}}</span>&nbsp;<span class="badge bg-success">{{j.ctc}}</span>
-            </div>
-            <div class="col-sm-4 py-2">
-              <!-- Short Description -->
-              <span class="badge bg-secondary">{{j.shortDescription}}</span>
-            </div>
-            <div class="col-sm-3 text-lg-end">
-               <!-- Link to Job Details -->
-              <a href="description/{{j.id}}"  class="btn btn-primary stretched-link">View Details</a>
-            </div>
+  <!-- Jobs List -->
+  <div class="card mb-3" *ngFor="let j of jobs">
+    <div class="card-body">
+      <div class="d-flex flex-column flex-lg-row">
+        <!-- Job Avatar -->
+        <span class="avatar avatar-text rounded-3 me-4 mb-2">{{shortName(j.jobTitle)}}</span>
+        <div class="row flex-fill">
+          <div class="col-sm-5">
+            <!-- Job Title -->
+            <h4 class="h5">{{j.jobTitle}}</h4>
+            <!-- Location and CTC Badges -->
+            <span class="badge bg-secondary">{{j.location}}</span>&nbsp;<span class="badge bg-success">{{j.ctc}}</span>
+          </div>
+          <div class="col-sm-4 py-2">
+            <!-- Short Description -->
+            <span class="badge bg-secondary">{{j.shortDescription}}</span>
+          </div>
+          <div class="col-sm-3 text-lg-end">
+            <!-- Link to Job Details -->
+            <a href="description/{{j.id}}" class="btn btn-primary stretched-link">View Details</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <br>
-  <app-footer></app-footer>
+<br>
+<app-footer></app-footer>

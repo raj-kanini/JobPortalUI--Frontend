@@ -1,2 +1,4 @@
 /* Apply padding to the body element */
-body { padding: 2rem 0; }
+body {
+  padding: 2rem 0;
+}

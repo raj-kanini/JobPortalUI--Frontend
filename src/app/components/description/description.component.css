@@ -1,62 +1,62 @@
 /* Reset default margin, padding, and box model for all elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Set the background color for the body */
-  body {
-    background-color: whitesmoke;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Center the content container and limit its maximum width */
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  /* Style the job application box */
-  .apply_box {
-    max-width: 600px;
-    padding: 20px;
-    background-color: white;
-    margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 10px;
-    box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.75);
-  }
-  
-  /* Style the button container and apply button */
-  .button_container {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-  }
+/* Set the background color for the body */
+body {
+  background-color: whitesmoke;
+}
 
-  button {
-    background-color: black;
-    border: transparent solid 2px;
-    padding: 5px 10px;
-    color: white;
-    border-radius: 8px;
-    font-weight: 500;
+/* Center the content container and limit its maximum width */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Style the job application box */
+.apply_box {
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Style the button container and apply button */
+.button_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+button {
+  background-color: black;
+  border: transparent solid 2px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 10px;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 460px) {
+  .textarea_control {
+    grid-column: 1 / span 1;
   }
-  
-  button:hover {
-    background-color: white;
-    border: 1px solid black;
-    padding: 5px 10px;
-    color: black;
-    font-weight: 500;
-    cursor: pointer;
-  }
- 
-  /* Media query for smaller screens */
-  @media (max-width: 460px) {
-    .textarea_control {
-      grid-column: 1 / span 1;
-    }
-  } ;
+}

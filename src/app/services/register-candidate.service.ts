@@ -3,15 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RegisterCandidateService {
-
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   // Register a candidate by sending data to the server
-  registerUser(data:any):Observable<any>{
-    let dataUrl:string="https://localhost:7278/api/Form"
-    return this.http.post<any>(dataUrl,data)
+  registerUser(data: any): Observable<any> {
+    let dataUrl: string = 'https://localhost:7278/api/Form';
+    return this.http.post<any>(dataUrl, data);
   }
 }

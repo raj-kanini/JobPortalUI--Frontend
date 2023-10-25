@@ -4,30 +4,32 @@
 
 <!-- Start of the container -->
 <div class="container">
-      <!-- Section for the application form title and description -->
+    <!-- Section for the application form title and description -->
     <div class="text-center mb-5">
         <h3>Application Form</h3>
-        <p class="lead">To get ahead in the hiring process, please complete this form. It will help you take one step closer to your goal.</p>
-      </div>
+        <p class="lead">To get ahead in the hiring process, please complete this form. It will help you take one step
+            closer to your goal.</p>
+    </div>
 
-        <!-- Grid layout for form elements -->
+    <!-- Grid layout for form elements -->
     <div class="row mx-0 justify-content-center">
         <div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0 px-xxl-3">
             <form (submit)="submitForm()" id="jobApplicationForm" class="w-100 rounded-1 p-4 border border-2 bg-white">
-               <!-- Input field for name -->
+                <!-- Input field for name -->
                 <label class="d-block mb-4">
                     <span class="form-label d-block">Your name</span>
-                    <input  required name="name" type="text" class="form-control" placeholder="Enter Your Name"  [(ngModel)]="candidateDetail.name"/>
+                    <input required name="name" type="text" class="form-control" placeholder="Enter Your Name"
+                        [(ngModel)]="candidateDetail.name" />
                 </label>
 
                 <!-- Input field for email -->
                 <label class="d-block mb-4">
                     <span class="form-label d-block">Email address</span>
-                    <input [(ngModel)]="candidateDetail.emailAddress" required name="email" type="email" class="form-control"
-                        placeholder="Enter Email Address" />
+                    <input [(ngModel)]="candidateDetail.emailAddress" required name="email" type="email"
+                        class="form-control" placeholder="Enter Email Address" />
                 </label>
 
-                   <!-- Dropdown for years of experience -->
+                <!-- Dropdown for years of experience -->
                 <label class="d-block mb-4">
                     <span class="form-label d-block">Years of experience</span>
                     <select [(ngModel)]="candidateDetail.experience" required name="experience" class="form-select">
@@ -43,10 +45,11 @@
                 <!-- Text area for additional information -->
                 <label class="d-block mb-4">
                     <span class="form-label d-block">Tell us more about yourself</span>
-                    <textarea [(ngModel)]="candidateDetail.about" name="message" class="form-control" rows="3" placeholder="What motivates you?"></textarea>
+                    <textarea [(ngModel)]="candidateDetail.about" name="message" class="form-control" rows="3"
+                        placeholder="What motivates you?"></textarea>
                 </label>
 
-                  <!-- File upload for resume -->
+                <!-- File upload for resume -->
                 <label class="d-block mb-4">
                     <span class="form-label d-block">Resume Upload</span>
                     <input [(ngModel)]="candidateDetail.pdf" required name="cv" type="file" class="form-control" />
@@ -57,32 +60,33 @@
                     <div>
                         <div class="form-check">
                             <label class="d-block">
-                                <input  [(ngModel)]="candidateDetail.location" type="radio" class="form-check-input" name="remote" value="yes" checked />
+                                <input [(ngModel)]="candidateDetail.location" type="radio" class="form-check-input"
+                                    name="remote" value="yes" checked />
                                 <span class="form-check-label">You'd like to work remotely</span>
                             </label>
                         </div>
                     </div>
                     <div>
                         <label class="form-check">
-                            <input [(ngModel)]="candidateDetail.location" type="radio" class="form-check-input" name="remote" value="no" />
+                            <input [(ngModel)]="candidateDetail.location" type="radio" class="form-check-input"
+                                name="remote" value="no" />
                             <span class="form-check-label">You'd prefer to work onsite</span>
                         </label>
                     </div>
                 </div>
 
-                 <!-- Submit button -->
+                <!-- Submit button -->
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary px-3 rounded-3">
                         Apply
                     </button>
                 </div>
 
-                 <!-- Attribution section -->
+                <!-- Attribution section -->
                 <div class="d-block text-end">
                     <div class="small">
                         by
-                        <a href="#" class="text-dark text-decoration-none"
-                            target="_blank">BeekinJobs</a>
+                        <a href="#" class="text-dark text-decoration-none" target="_blank">BeekinJobs</a>
                     </div>
                 </div>
             </form>

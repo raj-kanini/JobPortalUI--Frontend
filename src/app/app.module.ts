@@ -15,8 +15,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppliedComponent } from './components/applied/applied.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,16 +26,16 @@ import { AppliedComponent } from './components/applied/applied.component';
     ApplyComponent,
     ThanksComponent,
     DescriptionComponent,
-    AppliedComponent
+    AppliedComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule  
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
