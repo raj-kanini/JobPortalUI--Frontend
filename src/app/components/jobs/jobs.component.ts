@@ -8,14 +8,19 @@ import { JobDetailService } from 'src/app/services/job-detail.service';
 })
 export class JobsComponent implements OnInit {
   constructor(private jobService:JobDetailService){}
+
+  // An array to store job data
   jobs:any[]=[]
   ngOnInit(): void {
+      // Fetch and subscribe to job data from the service
     this.jobService.getAllJobs().subscribe((data)=>{
       this.jobs=data
     },(error)=>{
       console.log(error)
     })    
   }
+
+  // Function to generate a short name from a given string  
   shortName(s:string){
     let arr:any[]= s.split(" ")
     let shortName=''
@@ -26,7 +31,7 @@ export class JobsComponent implements OnInit {
       return shortName
     }
     else{
-      return "JD"
+      return "JD" // Default value if there are not enough words
     }
    
   }

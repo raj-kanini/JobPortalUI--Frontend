@@ -1,3 +1,4 @@
+/* Reset default styles */
 *{
     padding: 0;
     margin: 0;
@@ -10,6 +11,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+ /* Define global CSS variables */
 :root{
     --text-color: #fff;
     --bg-color: #000;    
@@ -18,6 +20,7 @@
     --p-font: 1rem;
 }
 
+ /* Define styles for sections */
 section{
     padding: 70px 17% 60px;
 }
@@ -31,6 +34,7 @@ section{
     gap: 3 rem;
 }
 
+ /* Styles for feature images */
 .row-img{
     overflow: hidden;
     width: 100px;
@@ -41,16 +45,19 @@ section{
     cursor: pointer;
 }
 
+ /* Image styles within feature content */
 .row-img img{
     width: 100%;
     display: block;
     transition: transform 0.7s;
 }
 
+ /* Scale the image on hover */
 .row-img img:hover{
     transform: scale(1.5);
 }
 
+   /* Styles for feature titles */
 .feature-content h4{
     font-size: 17px;
     font-weight: 600;
@@ -58,22 +65,12 @@ section{
     transition: all .30s ease;
 }
 
+  /* Change color on hover */
 .feature-content h4:hover{
     color: rgb(105, 101, 101);
 }
 
-/* .holiday{
-    display: grid;
-    grid-template-columns: repeat(300, 1fr);
-    align-items: center;
-    gap: 9rem;
-}
-
-.holiday-img img{
-    width: 100%;
-    border-radius: 10px;
-} */
-
+  /* Grid layout for description section */
 .description {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
@@ -81,12 +78,14 @@ section{
     gap: 2rem; 
 }
 
+  /* Image styles within the description */
 .description-img img {
     width: 100%;
     height: auto; 
     border-radius: 10px;
 }
 
+    /* Styles for subtitle in description */
 .description-text h5{
     font-size: 22px;
     font-weight: 600;
@@ -96,6 +95,7 @@ section{
     margin-bottom: 20px;
 }
 
+/* Styles for main heading in description */
 .description-text h2{
     font-size: var(--h2-font);
     font-weight: 800;
@@ -103,6 +103,7 @@ section{
     margin-bottom: 25px;
 }
 
+/* Styles for description text in description */
 .description-text p{
     font-size: var(--p-font);
     font-weight: 500;
@@ -111,6 +112,7 @@ section{
     margin-bottom: 35px;
 }
 
+ /* Styles for buttons */
 .btn{
     display: inline-block;
     padding: 13px 40px;
@@ -121,21 +123,11 @@ section{
     border: 1px solid black;
 }
 
-/* hr.mid-line{
-    height: px;
-    width: 15cm;
-    background: black;
-} */
-
-
-
+ /* Styles for horizontal line */
 .mid-line {
     height: 2px;
     width: 30%;
     background-color: black;
-    /* background-color: black;
-    border-color: black; */
-    /* box-shadow: 0 2px 4px rgb(0, 0, 0); */
     margin: 20px auto;
   }
   

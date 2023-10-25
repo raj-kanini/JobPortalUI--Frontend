@@ -1,27 +1,33 @@
-<!-- Navbar Component -->
+<!-- Include Bootstrap JavaScript (Ensure it's included before your code) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- Navbar Component -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-    <div class="container">
+  <div class="container-fluid">
     <img src="../../assets/images/Beekin-logo-white-201.png" width="30" height="30" alt="navbar-brand-image">
-      <a class="navbar-brand" id="TechYaatri" routerLink="/"><b>&nbsp;BeekinJobs</b></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> 
-      
-      <div class="navbar-collapse collapse" id="navbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link"  routerLink="/home" routerLinkActive="active">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"  routerLink="/jobs" routerLinkActive="active">Jobs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"  routerLink="/applied" routerLinkActive="active">Applied</a>
-          </li>
-        </ul>
-      </div>
+    <a class="navbar-brand" id="BeekinJobs" routerLink="/"><b>&nbsp;BeekinJobs</b></a>
+
+    <!-- Navbar Toggler Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+      aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links Container -->
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ms-auto">
+
+        <!-- Nav Links -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/jobs" routerLinkActive="active">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/applied" routerLinkActive="active">Applied</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>

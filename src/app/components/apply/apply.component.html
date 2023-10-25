@@ -1,24 +1,33 @@
+<!-- Add some vertical spacing -->
 <br><br><br><br>
 <br><br>
+
+<!-- Start of the container -->
 <div class="container">
+      <!-- Section for the application form title and description -->
     <div class="text-center mb-5">
         <h3>Application Form</h3>
         <p class="lead">To get ahead in the hiring process, please complete this form. It will help you take one step closer to your goal.</p>
       </div>
+
+        <!-- Grid layout for form elements -->
     <div class="row mx-0 justify-content-center">
         <div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0 px-xxl-3">
             <form (submit)="submitForm()" id="jobApplicationForm" class="w-100 rounded-1 p-4 border border-2 bg-white">
+               <!-- Input field for name -->
                 <label class="d-block mb-4">
                     <span class="form-label d-block">Your name</span>
                     <input  required name="name" type="text" class="form-control" placeholder="Enter Your Name"  [(ngModel)]="candidateDetail.name"/>
                 </label>
 
+                <!-- Input field for email -->
                 <label class="d-block mb-4">
                     <span class="form-label d-block">Email address</span>
                     <input [(ngModel)]="candidateDetail.emailAddress" required name="email" type="email" class="form-control"
                         placeholder="Enter Email Address" />
                 </label>
 
+                   <!-- Dropdown for years of experience -->
                 <label class="d-block mb-4">
                     <span class="form-label d-block">Years of experience</span>
                     <select [(ngModel)]="candidateDetail.experience" required name="experience" class="form-select">
@@ -31,16 +40,19 @@
                     </select>
                 </label>
 
+                <!-- Text area for additional information -->
                 <label class="d-block mb-4">
                     <span class="form-label d-block">Tell us more about yourself</span>
                     <textarea [(ngModel)]="candidateDetail.about" name="message" class="form-control" rows="3" placeholder="What motivates you?"></textarea>
                 </label>
 
+                  <!-- File upload for resume -->
                 <label class="d-block mb-4">
                     <span class="form-label d-block">Resume Upload</span>
                     <input [(ngModel)]="candidateDetail.pdf" required name="cv" type="file" class="form-control" />
                 </label>
 
+                <!-- Radio buttons for remote or onsite work preference -->
                 <div class="mb-4">
                     <div>
                         <div class="form-check">
@@ -58,12 +70,14 @@
                     </div>
                 </div>
 
+                 <!-- Submit button -->
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary px-3 rounded-3">
                         Apply
                     </button>
                 </div>
 
+                 <!-- Attribution section -->
                 <div class="d-block text-end">
                     <div class="small">
                         by
@@ -76,5 +90,8 @@
     </div>
 </div>
 
+<!-- Add some vertical spacing -->
 <br>
+
+<!-- Add some vertical spacing -->
 <app-footer></app-footer>

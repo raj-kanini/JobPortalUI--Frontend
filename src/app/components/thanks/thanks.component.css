@@ -1,2 +1,5 @@
+/* Import the Normalize.css library for cross-browser consistency */
 @import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+
+/* Import Font Awesome icons for adding scalable vector icons to the page */
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);

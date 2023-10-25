@@ -1,28 +1,32 @@
-nav{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    backdrop-filter: blur(10px);
+/* Styles for the navigation bar */
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  backdrop-filter: blur(10px);
 }
 
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 40px;
+/* Styles for list items within the navigation */
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #fff !important;
-    font-size: 17px;
+/* Styles for links within list items */
+nav ul li a {
+  text-decoration: none;
+  color: #fff !important;
+  font-size: 17px;
 }
 
-#TechYaatri{
-    color: #fff;
-} 
+/* Styles for the element with id 'BeekinJobs' */
+#BeekinJobs {
+  color: #fff;
+}

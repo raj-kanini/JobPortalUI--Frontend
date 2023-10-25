@@ -19,16 +19,8 @@
               <span class="badge bg-secondary">{{j.location}}</span>&nbsp;<span class="badge bg-success">{{j.ctc}}</span>
             </div>
             <div class="col-sm-4 py-2">
-              <!-- <span class="badge bg-secondary">ANGULAR</span>&nbsp;
-              <span class="badge bg-secondary">NODE</span>&nbsp;
-              <span class="badge bg-secondary">TYPESCRIPT</span>&nbsp;
-              <span class="badge bg-secondary">ENTRY-LEVEL</span> -->
               <span class="badge bg-secondary">{{j.shortDescription}}</span>
             </div>
-            <!-- Application Form -->
-            <!-- <div class="col-sm-3 text-lg-end">
-              <a [routerLink]="['/description/{{j.id}}']"  class="btn btn-primary stretched-link">Apply</a>
-            </div> -->
             <div class="col-sm-3 text-lg-end">
               <a href="description/{{j.id}}"  class="btn btn-danger stretched-link">Cancel</a>
             </div>
@@ -39,4 +31,5 @@
   </div>
 
   <br>
+  <!-- Include the footer component -->
   <app-footer></app-footer>

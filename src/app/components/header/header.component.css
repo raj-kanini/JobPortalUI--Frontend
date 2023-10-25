@@ -1,3 +1,4 @@
+/* Reset default styles and set the font family */
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Poppins',sans-serif;
 }
 
+/* Styling for the hero section */
 .hero{
     width: 100%;
     height: 100vh;
@@ -16,10 +18,12 @@
     justify-content: center;
 }
 
+/* Styling for the content within the hero section */
 .content{
     text-align: center;
 }
 
+/* Styling for the heading within the content */
 .content h1{
     font-size: 10vw;
     color: #fff;
@@ -27,16 +31,20 @@
     transition: 0.3s;
 } 
 
+/* Media query for larger screens */
 @media screen and (min-width: 1200px) {
     .content h1 {
         font-size: 100px; /* You can set a fixed font size for larger screens if desired */
     }
 }
+
+/* Hover effect for the heading */
 .content h1:hover{
     -webkit-text-stroke: 2px #fff;
     color: transparent;
 }
 
+/* Styling for the link within the content */
 .content a{
     text-decoration: none;
     display: inline-block;
@@ -48,7 +56,17 @@
     margin-top: 20px;
 }
 
-.back-video{
+/* 
+   The following CSS rules are related to the video background, 
+   which has been temporarily commented out.
+*/
+
+/* 
+   Set the video's position to be absolute, aligned to the bottom-right corner,
+   and with a lower z-index so it stays in the background.
+*/
+
+/* .back-video{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -67,8 +85,9 @@
         width: auto;
         height: 100%;
     }
-}
+} */
 
+/* Media query for smaller screens */
 @media screen and (max-width: 600px) {
     /* For devices with a maximum width of 600px or less */
     h1 {
